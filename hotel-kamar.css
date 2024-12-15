@@ -1,0 +1,95 @@
+header {
+    background-color: rgb(156, 176, 249);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    position: relative;
+    z-index: 1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: darkgray;
+}
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+.container {
+    display: flex;
+    margin: 20px;
+}
+.leftbar {
+    flex: 1;
+    padding: 10px;
+}
+.content {
+    flex: 3;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.content img {
+    width: 350px;
+    height: 180px;
+    border-radius: 8px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: bisque;
+    padding: 100px;
+    border-radius: 10px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kamar</title>
+    <link rel="stylesheet" href="Form-Kamar.css"> 
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Kamar</h2>
+        <form>
+            <label for="idKamar">ID Kamar</label>
+            <input type="text" id="idKamar" name="idKamar">
+
+            <label for="gambarRuangan">Gambar Ruangan</label>
+            <input type="file" id="gambarRuangan" name="gambarRuangan">
+
+            <label for="jenisKamar">Jenis Kamar</label>
+            <select id="jenisKamar" name="jenisKamar">
+                <option value="">--Pilih--</option>
+                <option value="standar">Standar</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="family">Family</option>
+            </select>
+            <label for="harga">Harga</label>
+            <div class="harga-input">
+                <span>RP.</span>
+                <input type="number" id="harga" name="harga">
+                <span>IDR</span>
+            </div>
+
+            <label>Fasilitas</label>
+            <div class="fasilitas">
+                <label><input type="checkbox" name="fasilitas" value="AC"> AC</label>
+                <label><input type="checkbox" name="fasilitas" value="bathup"> Bathup</label>
+                <label><input type="checkbox" name="fasilitas" value="balkon"> Balkon</label>
+                <label><input type="checkbox" name="fasilitas" value="tv"> TV</label>
+                <label><input type="checkbox" name="fasilitas" value="wifi"> WIFI</label>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="save-button">Simpan</button>
+                <button type="reset" class="cancel-button">Batal</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
